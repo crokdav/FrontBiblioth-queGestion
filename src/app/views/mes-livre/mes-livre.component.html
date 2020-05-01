@@ -1,0 +1,20 @@
+<h3>Mes Livres</h3>
+<br/>
+<br/>
+
+
+<div class="card text-center" style="width: 18rem;margin:auto" *ngFor="let el of elements">
+    <img src="../../../assets/livre.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Nom du livre : {{el.nomLivre}}</h5>
+      <h6>Auteur : {{el.auteur}}</h6>
+      <p>Description : {{el.description}}</p>
+      <a (click)="annuler(el)" class="btn btn-danger">Annuler reservation</a>
+    </div>
+    <br/>
+    <br/>
+
+
+  </div>
+
+

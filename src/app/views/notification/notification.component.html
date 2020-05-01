@@ -1,0 +1,16 @@
+<table id="customers">
+    <thead>
+      <tr>
+        <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr mdbTableCol *ngFor="let el of elements">
+        <th scope="row">{{el.id}}</th>
+        <td>{{el.nomEtudiant}}</td>
+        <td>{{el.date| date:'shortDate'}}</td>
+        <td>{{el.livre.nomLivre}}</td>
+        <td>L'etudiant {{el.nomEtudiant}} a emprunté la livre {{el.livre.nomLivre}} le {{el.date | date:'shortDate'}}.. </td>
+      </tr>
+    </tbody>
+  </table>
